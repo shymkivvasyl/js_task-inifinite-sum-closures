@@ -8,7 +8,9 @@ function makeAdder() {
 
   const adder = (...value) => {
     if (value.length !== 0) {
-      sum += value[0];
+      for (let i = 0; i < value.length; i++) {
+        sum += value[i];
+      }
     } else {
       const youSuma = sum;
 
